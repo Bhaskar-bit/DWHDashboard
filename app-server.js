@@ -97,5 +97,5 @@ app.get('/*', (req, res) => {
 
 /* Create the server for application */
 const server = http.createServer(app);
-const port = process.env.PORT || 8080;
-server.listen(port, () => console.log('NextGen server is running on port ' + port + '...'));
+const port = process.env.PORT || 3000;
+server.listen(process.env.PORT, () => console.log('NextGen server is running on port ' + port + '...'));
