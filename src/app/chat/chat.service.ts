@@ -30,6 +30,7 @@ export class ChatService {
                .then(res => {
                   const speech = res.result.fulfillment.speech;
                   const botMessage = new Message(speech, 'bot');
+                  console.log(botMessage);
                   this.update(botMessage);
                });
   }
@@ -40,6 +41,4 @@ export class ChatService {
   update(msg: Message) {
     this.conversation.next([msg]);
   }
-  
-
 }
