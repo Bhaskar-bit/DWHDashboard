@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChatService, Message } from '../chat.service';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/scan';
+import { Observable } from 'rxjs';
+import { scan } from 'rxjs/operators';
 
 
 @Component({
@@ -19,7 +19,9 @@ export class ChatDialogComponent implements OnInit {
   ngOnInit() {
     // appends to array after each new message is added to feedSource
     this.messages = this.chat.conversation.asObservable()
-        .scan((acc, val) => acc.concat(val) );
+    .pipe(
+      scan((acc, val) => acc.concat(val))
+    )
   }
 
   sendMessage() {
