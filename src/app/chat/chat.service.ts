@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 
-import { ApiAiClient } from 'api-ai-javascript/es6/ApiAiClient'
+import { ApiAiClient } from 'api-ai-javascript/es6/ApiAiClient';
 
 import { BehaviorSubject } from 'rxjs';
 
