@@ -14,6 +14,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 
+import {IncidentService} from './pages/tables/tables.service';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -26,7 +28,7 @@ import { ComponentsModule } from "./components/components.module";
     ToastrModule.forRoot()
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
-  providers: [],
+  providers: [ IncidentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
