@@ -4,7 +4,7 @@
     "description": "Black Dasboard Angular, a Creative Tim Desgin. Coded by Creative Tim",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "npm start",
         "heroku-postbuild": "ng build",
         "build": "ng build",
         "test": "ng test",
