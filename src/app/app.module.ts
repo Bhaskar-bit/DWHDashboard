@@ -16,6 +16,8 @@ import { ComponentsModule } from "./components/components.module";
 import { ChatModule } from './chat/chat.module';
 
 
+import {IncidentService} from './pages/tables/tables.service';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +31,7 @@ import { ChatModule } from './chat/chat.module';
     ChatModule
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
-  providers: [],
+  providers: [ IncidentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

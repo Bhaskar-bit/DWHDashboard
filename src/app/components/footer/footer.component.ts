@@ -8,7 +8,8 @@ import { Component, OnInit } from "@angular/core";
 export class FooterComponent implements OnInit {
   test: Date = new Date();
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {}
 }

@@ -1,144 +1,56 @@
-
 <div class=" content">
-  <div class=" row">
-    <div class=" col-lg-12 col-md-12">
-      <div class=" card">
-        <div class=" card-header">
-          <h4 class=" card-title">Total Nmber of Incidents</h4>
+    <div class=" row">
+        <div class=" col-lg-12 col-md-12">
+            <div class=" card">
+                <div class=" card-header">
+                    <h4 class=" card-title">Total Nmber of Incidents</h4>
+                </div>
+                <div class=" card-body">
+                    <div class=" table-responsive">
+                        <table class=" table tablesorter" id="">
+                            <thead class=" text-primary">
+                                <tr>
+                                    <th>PS Id</th>
+                                    <th>IMDB</th>
+                                    <th>Ty</th>
+                                    <th>Technical Impact</th>
+                                    <th>Workview Comment</th>
+                                    <th>Status</th>
+                                    <th>Debrief Status</th>
+                                    <th>Prio</th>
+                                    <th>Severity</th>
+                                    <th>Solving Team</th>
+                                    <th>Root Cause Team</th>
+                                    <th>Service Mgt Domain</th>
+                                    <th class=" text-center">Incident Start date
+                                    </th>
+                                    <th>Tech. impact End date
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of data">
+                                    <td>{{item.PS_Id}}</td>
+                                    <td>{{item.IMDB}}</td>
+                                    <td>{{item.Ty}}</td>
+                                    <td>{{item.Technical_Impact}}</td>
+                                    <td>{{item.Workview_comment}}</td>
+                                    <td>{{item.Status}}</td>
+                                    <td>{{item.Debrief_Status}}</td>
+                                    <td>{{item.Prio}}</td>
+                                    <td>{{item.Severity}}</td>
+                                    <td>{{item.Solving_Team}}</td>
+                                    <td>{{item.Root_Cause_Team}}</td>
+                                    <td>{{item.Service_Mgt_Domain}}</td>
+                                    <td>{{item.Incident_Start_date}}</td>
+                                    <td>{{item.Tech_impact_End_date}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class=" card-body">
-          <div class=" table-responsive">
-            <table class=" table tablesorter" id="">
-              <thead class=" text-primary">
-                <tr>
-                  <th>Incident No.</th>
-                  <th>Job Name</th>
-                  <th >Start Time</th>
-                  <th >End Time</th>
-                  <th class=" text-center">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>INC_ET00_EXT </td>
-                  <td>ET00E006 </td>
-                  <td>07-JAN-2020 07:17:04.00 </td>
-                  <td >07-JAN-2020 08:20:33.00</td>
-                  <td class=" text-center">ABORT</td>
-                </tr>
-                <tr>
-                  <td> INC_ET00_OPS </td>
-                  <td>ET00TRFO </td>
-                  <td>14-JAN-2020 00:05:14.00 </td>
-                  <td > </td>
-                  <td class=" text-center">START</td>
-                </tr>
-                <tr>
-                  <td> INC_ET10_OTH </td>
-                  <td> ET00TRFT </td>
-                  <td>14-JAN-2020 00:05:14.00</td>
-                  <td > </td>
-                  <td class=" text-center">START</td>
-                </tr>
-                <tr>
-                  <td>  INC_ET16_CTU  </td>
-                  <td> ET16T001 </td>
-                  <td>13-JAN-2020 21:05:11.00</td>
-                  <td >13-JAN-2020 21:06:20.00</td>
-                  <td class=" text-center">COMPL </td>
-                </tr>
-                <tr>
-                  <td> INC_ET20_FAC  </td>
-                  <td>ET20T009 </td>
-                  <td>14-JAN-2020 00:05:13.00 </td>
-                  <td >14-JAN-2020 01:01:44.00</td>
-                  <td class=" text-center">COMPL</td>
-                </tr>
-                <tr>
-                  <td>  INC_ET26_MMA  </td>
-                  <td>ET26T005 </td>
-                  <td>07-JAN-2020 07:17:04.00 </td>
-                  <td >07-JAN-2020 08:20:33.00</td>
-                  <td class=" text-center">ABORT</td>
-                </tr>
-                <tr>
-                  <td> INC_ET50_INV  </td>
-                  <td>ET50T001 </td>
-                  <td>07-JAN-2020 07:17:04.00 </td>
-                  <td >07-JAN-2020 08:20:33.00</td>
-                  <td class=" text-center">ABORT</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- <div class=" col-md-12">
-      <div class=" card card-plain">
-        <div class=" card-header">
-          <h4 class=" card-title">Table on Plain Background</h4>
-          <p class=" category">Here is a subtitle for this table</p>
-        </div>
-        <div class=" card-body">
-          <div class=" table-responsive">
-            <table class=" table tablesorter" id="">
-              <thead class=" text-primary">
-                <tr>
-                  <th>Name</th>
-                  <th>Country</th>
-                  <th>City</th>
-                  <th class=" text-center">Salary</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dakota Rice</td>
-                  <td>Niger</td>
-                  <td>Oud-Turnhout</td>
-                  <td class=" text-center">$36,738</td>
-                </tr>
-                <tr>
-                  <td>Minerva Hooper</td>
-                  <td>CuraÃ§ao</td>
-                  <td>Sinaai-Waas</td>
-                  <td class=" text-center">$23,789</td>
-                </tr>
-                <tr>
-                  <td>Sage Rodriguez</td>
-                  <td>Netherlands</td>
-                  <td>Baileux</td>
-                  <td class=" text-center">$56,142</td>
-                </tr>
-                <tr>
-                  <td>Philip Chaney</td>
-                  <td>Korea, South</td>
-                  <td>Overland Park</td>
-                  <td class=" text-center">$38,735</td>
-                </tr>
-                <tr>
-                  <td>Doris Greene</td>
-                  <td>Malawi</td>
-                  <td>Feldkirchen in KÃ¤rnten</td>
-                  <td class=" text-center">$63,542</td>
-                </tr>
-                <tr>
-                  <td>Mason Porter</td>
-                  <td>Chile</td>
-                  <td>Gloucester</td>
-                  <td class=" text-center">$78,615</td>
-                </tr>
-                <tr>
-                  <td>Jon Porter</td>
-                  <td>Portugal</td>
-                  <td>Gloucester</td>
-                  <td class=" text-center">$98,615</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </div>
 </div>
