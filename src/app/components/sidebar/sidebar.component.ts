@@ -22,6 +22,7 @@ export const ROUTES: RouteInfo[] = [
     rtlTitle: "خرائط",
     icon: "icon-pin",
     class: "" }
+   
     //,
   
   // {
@@ -58,11 +59,19 @@ export const ReportingROUTES: RouteInfo[] = [
     class: ""
   }
   
+  ,
+  {
+    path: "/chat ",
+    title: "Virtual assistant",
+    rtlTitle: " ",
+    icon: " ",
+    class: ""
+  }
 ];
 export const OUTERROUTES: RouteInfo[] = [
   {
     path: " ",
-    title: "Application Monitering",
+    title: "Application Monitoring",
     rtlTitle: "لوحة القيادة",
     icon: "icon-chart-pie-36",
     class: ""

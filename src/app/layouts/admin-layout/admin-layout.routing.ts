@@ -7,6 +7,8 @@ import { NotificationsComponent } from "../../pages/notifications/notifications.
 import { UserComponent } from "../../pages/user/user.component";
 import { TablesComponent } from "../../pages/tables/tables.component";
 import { TypographyComponent } from "../../pages/typography/typography.component";
+import { ChatDialogComponent } from 'src/app/chat/chat-dialog/chat-dialog.component';
+
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 export const AdminLayoutRoutes: Routes = [
@@ -17,5 +19,6 @@ export const AdminLayoutRoutes: Routes = [
   { path: "user", component: UserComponent },
   { path: "tables", component: TablesComponent },
   { path: "typography", component: TypographyComponent },
+  { path: "chat", component: ChatDialogComponent },
   // { path: "rtl", component: RtlComponent }
 ];
