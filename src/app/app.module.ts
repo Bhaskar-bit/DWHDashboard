@@ -17,6 +17,7 @@ import { ChatModule } from './chat/chat.module';
 
 
 import {IncidentService} from './pages/tables/tables.service';
+import {NgxPaginationModule} from 'ngx-pagination';  
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import {IncidentService} from './pages/tables/tables.service';
     RouterModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
-    ChatModule
+    ChatModule,
+    NgxPaginationModule
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [ IncidentService],

@@ -1,15 +1,179 @@
 <div class=" content">
+        <!-- <div class=" row">
+                <div class=" col-12">
+                  <div class=" card card-chart">
+                    <div class=" card-header">
+                      <div class=" row">
+                        <div class=" col-sm-6 text-left">
+                          <h5 class=" card-category"></h5>
+                          <h2 class=" card-title">ICOW Incidents Summary - January 2020 </h2>
+                        </div>
+                        <div class=" col-sm-6">
+                          <div
+                            class=" btn-group btn-group-toggle float-right"
+                            data-toggle="buttons"
+                          >
+                            <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[0];updateOptions();clicked=true;clicked1=false;clicked2=false" [ngClass]="{'active':clicked===true}">
+                              <input checked="checked" name="options" type="radio" />
+            
+                              <span
+                                class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                              >
+                              ICOW
+                              </span>
+                              <span class=" d-block d-sm-none">
+                                <i class=" tim-icons icon-single-02"> </i>
+                              </span>
+                            </label>
+                            <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[1];updateOptions();clicked=false;clicked1=true;clicked2=false" [ngClass]="{'active':clicked1===true}">
+                              <input
+                                class=" d-none d-sm-none"
+                                name="options"
+                                type="radio"
+                              />
+            
+                              <span
+                                class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                              >
+                              SLA Analysis
+                              </span>
+                              <span class=" d-block d-sm-none">
+                                <i class=" tim-icons icon-gift-2"> </i>
+                              </span>
+                            </label>
+                            <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[2];updateOptions();clicked=false;clicked1=false;clicked2=true" [ngClass]="{'active':clicked2===true}">
+                              <input class=" d-none" name="options" type="radio" />
+            
+                              <span
+                                class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                              >
+                              Incident Summary 
+                              </span>
+                              <span class=" d-block d-sm-none">
+                                <i class=" tim-icons icon-tap-02"> </i>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" card-body">
+                      <div class=" chart-area"><canvas id="chartBig1"> </canvas></div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+    
+    
+    
+    <div class=" row">
+                        <div class=" col-6">
+                        <div class=" card card-chart">
+                            <div class=" card-header">
+                            <div class=" row">
+                                <div class=" col-sm-12 text-left">
+                                <h5 class=" card-category">
+                                    </h5>
+                                <h2 class=" card-title"> ICOW Incidents Summary - January 2020 </h2>
+                                </div>
+                                <!-- <div class=" col-sm-6">
+                                <div
+                                    class=" btn-group btn-group-toggle float-right"
+                                    data-toggle="buttons"
+                                >
+                                    <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[0];updateOptions();clicked=true;clicked1=false;clicked2=false" [ngClass]="{'active':clicked===true}">
+                                    <input checked="checked" name="options" type="radio" />
+                    
+                                    <span
+                                        class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                                    >
+                                   
+                                    </span>
+                                    <span class=" d-block d-sm-none">
+                                        <i class=" tim-icons icon-single-02"> </i>
+                                    </span>
+                                    </label>
+                                
+                                </div>
+                                </div> -->
+                            
+                            </div>
+                            </div>
+                            <div class=" card-body">
+                            <div style="height: auto;" class=" chart-area"><canvas id="bar-chart" ></canvas></div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class=" col-6">
+                  <div class=" card card-chart">
+                    <div class=" card-header">
+                      <h2 class=" card-title">Incidents SLA Analysis -January 2020
+                        </h2>
+                    </div>
+                    <div class=" card-body">
+                      <div style="height: auto;" class=" chart-area"><canvas id="bar_incidents_1"> </canvas></div>
+                    </div>
+                  </div>
+                        </div>
+       </div>
+       <div class=" row">
+             <div class=" col-6">
+                        <div class=" card card-chart">
+                            <div class=" card-header">
+                            <div class=" row">
+                                <div class=" col-sm-12 text-left">
+                                <h5 class=" card-category"></h5>
+                                <h2 class=" card-title">  Incidents SLA Analysis Summary- Jan 2020
+                                    </h2>
+                                </div>
+                                <!-- <div class=" col-sm-6">
+                                <div
+                                    class=" btn-group btn-group-toggle float-right"
+                                    data-toggle="buttons"
+                                >
+                                    <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[0];updateOptions();clicked=true;clicked1=false;clicked2=false" [ngClass]="{'active':clicked===true}">
+                                    <input checked="checked" name="options" type="radio" />
+                    
+                                    
+                                    <span class=" d-block d-sm-none">
+                                        <i class=" tim-icons icon-single-02"> </i>
+                                    </span>
+                                    </label>
+                                
+                                </div>
+                                </div> -->
+                            
+                            </div>
+                            </div>
+                            <div class=" card-body">
+                            <div style="height: auto;" class=" chart-area"><canvas id="bar_SLA_Analysis_incidents"> </canvas></div>
+                            </div>
+                        </div>
+              </div>
+             <div class=" col-6">
+                        <div class=" card card-chart">
+                            <div class=" card-header">
+                            <h2 class=" card-title">Incident Summary by Priority
+                                </h2>
+                            </div>
+                            <div class=" card-body">
+                            <div style="height: auto;" class=" chart-area"><canvas id="barSummary_incidents"> </canvas></div>
+                            </div>
+                        </div>
+               </div>
+        </div>
+    
     <div class=" row">
         <div class=" col-lg-12 col-md-12">
             <div class=" card">
                 <div class=" card-header">
-                    <h4 class=" card-title">Total Nmber of Incidents</h4>
+                    <h4 class=" card-title"> ICOW Incidents Dump</h4>
                 </div>
                 <div class=" card-body">
                     <div class=" table-responsive">
-                        <table class=" table tablesorter" id="">
+                        <table class="table-bordered  tablesorter " id="">
                             <thead class=" text-primary">
-                                <tr>
+                                <tr style="text-align: center;">
                                     <th>PS Id</th>
                                     <th>IMDB</th>
                                     <th>Ty</th>
@@ -29,7 +193,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr *ngFor="let item of data">
+                                <tr *ngFor="let item of data ">
                                     <td>{{item.PS_Id}}</td>
                                     <td>{{item.IMDB}}</td>
                                     <td>{{item.Ty}}</td>
@@ -47,6 +211,9 @@
                                 </tr>
 
                             </tbody>
+                            <!-- <ul class="pagination">  | paginate: { itemsPerPage: 5, currentPage: p}
+                                    <pagination-controls (pageChange)="p = $event"></pagination-controls>  
+                                    </ul>  -->
                         </table>
                     </div>
                 </div>
