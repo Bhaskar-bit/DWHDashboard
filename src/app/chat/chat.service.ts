@@ -2,11 +2,9 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 
-//import { ApiAiClient } from 'api-ai-javascript';
-import {ApiAiClient} from 'api-ai-javascript/es6/ApiAiClient';
+import { ApiAiClient } from 'api-ai-javascript/es6/ApiAiClient';
 
-//import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 
 // Message class for displaying messages in the component
 export class Message {
@@ -32,6 +30,7 @@ export class ChatService {
                .then(res => {
                   const speech = res.result.fulfillment.speech;
                   const botMessage = new Message(speech, 'bot');
+                  console.log(botMessage);
                   this.update(botMessage);
                });
   }
@@ -42,6 +41,4 @@ export class ChatService {
   update(msg: Message) {
     this.conversation.next([msg]);
   }
-  
-
 }
