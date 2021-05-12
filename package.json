@@ -76,7 +76,7 @@
         "@ng-bootstrap/ng-bootstrap": "4.2.1",
         "actions-on-google": "^2.12.0",
         "api-ai-javascript": "^2.0.0-beta.21",
-        "chart.js": "2.8.0",
+        "chart.js": "2.9.4",
         "cookie-parser": "^1.4.4",
         "core-js": "2.6.5",
         "helmet": "^3.21.2",
