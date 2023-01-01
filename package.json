@@ -89,8 +89,8 @@
         "tslib": "1.10.0",
         "zone.js": "0.9.1",
         "@angular-devkit/architect": "0.13.8",
-        "@angular-devkit/build-angular": "0.13.8",
-        "@angular-devkit/build-optimizer": "0.13.8",
+        "@angular-devkit/build-angular": "15.0.4",
+        "@angular-devkit/build-optimizer": "0.1302.1",
         "@angular-devkit/build-webpack": "0.13.8",
         "@angular-devkit/core": "7.3.8",
         "@angular-devkit/schematics": "7.3.8"
